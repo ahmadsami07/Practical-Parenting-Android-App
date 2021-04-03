@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UI.ChooseSide">
+
+    <TextView
+        android:id="@+id/select_a_side"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:background="#A6445871"
+        android:fontFamily="@font/imprima"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/select_a_side"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/side_child_image" />
+
+    <TextView
+        android:id="@+id/child_name_for_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="#A6445871"
+        android:fontFamily="@font/imprima"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/child_name_for_side"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/side_child_image" />
+
+    <Button
+        android:id="@+id/heads"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="129dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_corners_buttons"
+        android:fontFamily="@font/imprima"
+        android:text="@string/head"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_a_side"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/tails"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="128dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_corners_buttons"
+        android:fontFamily="@font/imprima"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/tails"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_a_side"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <ImageView
+        android:id="@+id/side_child_image"
+        android:layout_width="149dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
